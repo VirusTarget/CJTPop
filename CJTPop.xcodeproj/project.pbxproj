@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		131B0F0C1DB48520000B7F99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F0B1DB48520000B7F99 /* main.m */; };
+		131B0F0F1DB48520000B7F99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F0E1DB48520000B7F99 /* AppDelegate.m */; };
+		131B0F121DB48520000B7F99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F111DB48520000B7F99 /* ViewController.m */; };
+		131B0F151DB48520000B7F99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131B0F131DB48520000B7F99 /* Main.storyboard */; };
+		131B0F171DB48520000B7F99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131B0F161DB48520000B7F99 /* Assets.xcassets */; };
+		131B0F1A1DB48520000B7F99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131B0F181DB48520000B7F99 /* LaunchScreen.storyboard */; };
+		131B0F251DB48520000B7F99 /* CJTPopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F241DB48520000B7F99 /* CJTPopTests.m */; };
+		131B0F301DB48520000B7F99 /* CJTPopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F2F1DB48520000B7F99 /* CJTPopUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		131B0F211DB48520000B7F99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 131B0EFF1DB4851F000B7F99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 131B0F061DB48520000B7F99;
+			remoteInfo = CJTPop;
+		};
+		131B0F2C1DB48520000B7F99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 131B0EFF1DB4851F000B7F99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 131B0F061DB48520000B7F99;
+			remoteInfo = CJTPop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		131B0F071DB48520000B7F99 /* CJTPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJTPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		131B0F0B1DB48520000B7F99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		131B0F0D1DB48520000B7F99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		131B0F0E1DB48520000B7F99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		131B0F101DB48520000B7F99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		131B0F111DB48520000B7F99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		131B0F141DB48520000B7F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		131B0F161DB48520000B7F99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		131B0F191DB48520000B7F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		131B0F1B1DB48520000B7F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		131B0F201DB48520000B7F99 /* CJTPopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJTPopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		131B0F241DB48520000B7F99 /* CJTPopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJTPopTests.m; sourceTree = "<group>"; };
+		131B0F261DB48520000B7F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		131B0F2B1DB48520000B7F99 /* CJTPopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJTPopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		131B0F2F1DB48520000B7F99 /* CJTPopUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJTPopUITests.m; sourceTree = "<group>"; };
+		131B0F311DB48520000B7F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		131B0F041DB48520000B7F99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		131B0F1D1DB48520000B7F99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		131B0F281DB48520000B7F99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		131B0EFE1DB4851F000B7F99 = {
+			isa = PBXGroup;
+			children = (
+				131B0F091DB48520000B7F99 /* CJTPop */,
+				131B0F231DB48520000B7F99 /* CJTPopTests */,
+				131B0F2E1DB48520000B7F99 /* CJTPopUITests */,
+				131B0F081DB48520000B7F99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		131B0F081DB48520000B7F99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				131B0F071DB48520000B7F99 /* CJTPop.app */,
+				131B0F201DB48520000B7F99 /* CJTPopTests.xctest */,
+				131B0F2B1DB48520000B7F99 /* CJTPopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		131B0F091DB48520000B7F99 /* CJTPop */ = {
+			isa = PBXGroup;
+			children = (
+				131B0F0D1DB48520000B7F99 /* AppDelegate.h */,
+				131B0F0E1DB48520000B7F99 /* AppDelegate.m */,
+				131B0F101DB48520000B7F99 /* ViewController.h */,
+				131B0F111DB48520000B7F99 /* ViewController.m */,
+				131B0F131DB48520000B7F99 /* Main.storyboard */,
+				131B0F161DB48520000B7F99 /* Assets.xcassets */,
+				131B0F181DB48520000B7F99 /* LaunchScreen.storyboard */,
+				131B0F1B1DB48520000B7F99 /* Info.plist */,
+				131B0F0A1DB48520000B7F99 /* Supporting Files */,
+			);
+			path = CJTPop;
+			sourceTree = "<group>";
+		};
+		131B0F0A1DB48520000B7F99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				131B0F0B1DB48520000B7F99 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		131B0F231DB48520000B7F99 /* CJTPopTests */ = {
+			isa = PBXGroup;
+			children = (
+				131B0F241DB48520000B7F99 /* CJTPopTests.m */,
+				131B0F261DB48520000B7F99 /* Info.plist */,
+			);
+			path = CJTPopTests;
+			sourceTree = "<group>";
+		};
+		131B0F2E1DB48520000B7F99 /* CJTPopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				131B0F2F1DB48520000B7F99 /* CJTPopUITests.m */,
+				131B0F311DB48520000B7F99 /* Info.plist */,
+			);
+			path = CJTPopUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		131B0F061DB48520000B7F99 /* CJTPop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 131B0F341DB48520000B7F99 /* Build configuration list for PBXNativeTarget "CJTPop" */;
+			buildPhases = (
+				131B0F031DB48520000B7F99 /* Sources */,
+				131B0F041DB48520000B7F99 /* Frameworks */,
+				131B0F051DB48520000B7F99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CJTPop;
+			productName = CJTPop;
+			productReference = 131B0F071DB48520000B7F99 /* CJTPop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		131B0F1F1DB48520000B7F99 /* CJTPopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 131B0F371DB48520000B7F99 /* Build configuration list for PBXNativeTarget "CJTPopTests" */;
+			buildPhases = (
+				131B0F1C1DB48520000B7F99 /* Sources */,
+				131B0F1D1DB48520000B7F99 /* Frameworks */,
+				131B0F1E1DB48520000B7F99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				131B0F221DB48520000B7F99 /* PBXTargetDependency */,
+			);
+			name = CJTPopTests;
+			productName = CJTPopTests;
+			productReference = 131B0F201DB48520000B7F99 /* CJTPopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		131B0F2A1DB48520000B7F99 /* CJTPopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 131B0F3A1DB48520000B7F99 /* Build configuration list for PBXNativeTarget "CJTPopUITests" */;
+			buildPhases = (
+				131B0F271DB48520000B7F99 /* Sources */,
+				131B0F281DB48520000B7F99 /* Frameworks */,
+				131B0F291DB48520000B7F99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				131B0F2D1DB48520000B7F99 /* PBXTargetDependency */,
+			);
+			name = CJTPopUITests;
+			productName = CJTPopUITests;
+			productReference = 131B0F2B1DB48520000B7F99 /* CJTPopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		131B0EFF1DB4851F000B7F99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = CJT;
+				TargetAttributes = {
+					131B0F061DB48520000B7F99 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YPJR895ZNV;
+						ProvisioningStyle = Automatic;
+					};
+					131B0F1F1DB48520000B7F99 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YPJR895ZNV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 131B0F061DB48520000B7F99;
+					};
+					131B0F2A1DB48520000B7F99 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YPJR895ZNV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 131B0F061DB48520000B7F99;
+					};
+				};
+			};
+			buildConfigurationList = 131B0F021DB4851F000B7F99 /* Build configuration list for PBXProject "CJTPop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 131B0EFE1DB4851F000B7F99;
+			productRefGroup = 131B0F081DB48520000B7F99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				131B0F061DB48520000B7F99 /* CJTPop */,
+				131B0F1F1DB48520000B7F99 /* CJTPopTests */,
+				131B0F2A1DB48520000B7F99 /* CJTPopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		131B0F051DB48520000B7F99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				131B0F1A1DB48520000B7F99 /* LaunchScreen.storyboard in Resources */,
+				131B0F171DB48520000B7F99 /* Assets.xcassets in Resources */,
+				131B0F151DB48520000B7F99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		131B0F1E1DB48520000B7F99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		131B0F291DB48520000B7F99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		131B0F031DB48520000B7F99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				131B0F121DB48520000B7F99 /* ViewController.m in Sources */,
+				131B0F0F1DB48520000B7F99 /* AppDelegate.m in Sources */,
+				131B0F0C1DB48520000B7F99 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		131B0F1C1DB48520000B7F99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				131B0F251DB48520000B7F99 /* CJTPopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		131B0F271DB48520000B7F99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				131B0F301DB48520000B7F99 /* CJTPopUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		131B0F221DB48520000B7F99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 131B0F061DB48520000B7F99 /* CJTPop */;
+			targetProxy = 131B0F211DB48520000B7F99 /* PBXContainerItemProxy */;
+		};
+		131B0F2D1DB48520000B7F99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 131B0F061DB48520000B7F99 /* CJTPop */;
+			targetProxy = 131B0F2C1DB48520000B7F99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		131B0F131DB48520000B7F99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				131B0F141DB48520000B7F99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		131B0F181DB48520000B7F99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				131B0F191DB48520000B7F99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		131B0F321DB48520000B7F99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		131B0F331DB48520000B7F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		131B0F351DB48520000B7F99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YPJR895ZNV;
+				INFOPLIST_FILE = CJTPop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CJT.CJTPop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		131B0F361DB48520000B7F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YPJR895ZNV;
+				INFOPLIST_FILE = CJTPop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CJT.CJTPop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		131B0F381DB48520000B7F99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YPJR895ZNV;
+				INFOPLIST_FILE = CJTPopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CJT.CJTPopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJTPop.app/CJTPop";
+			};
+			name = Debug;
+		};
+		131B0F391DB48520000B7F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YPJR895ZNV;
+				INFOPLIST_FILE = CJTPopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CJT.CJTPopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJTPop.app/CJTPop";
+			};
+			name = Release;
+		};
+		131B0F3B1DB48520000B7F99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YPJR895ZNV;
+				INFOPLIST_FILE = CJTPopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CJT.CJTPopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CJTPop;
+			};
+			name = Debug;
+		};
+		131B0F3C1DB48520000B7F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YPJR895ZNV;
+				INFOPLIST_FILE = CJTPopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CJT.CJTPopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CJTPop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		131B0F021DB4851F000B7F99 /* Build configuration list for PBXProject "CJTPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131B0F321DB48520000B7F99 /* Debug */,
+				131B0F331DB48520000B7F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		131B0F341DB48520000B7F99 /* Build configuration list for PBXNativeTarget "CJTPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131B0F351DB48520000B7F99 /* Debug */,
+				131B0F361DB48520000B7F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		131B0F371DB48520000B7F99 /* Build configuration list for PBXNativeTarget "CJTPopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131B0F381DB48520000B7F99 /* Debug */,
+				131B0F391DB48520000B7F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		131B0F3A1DB48520000B7F99 /* Build configuration list for PBXNativeTarget "CJTPopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131B0F3B1DB48520000B7F99 /* Debug */,
+				131B0F3C1DB48520000B7F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 131B0EFF1DB4851F000B7F99 /* Project object */;
+}
