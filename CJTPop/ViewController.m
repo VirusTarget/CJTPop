@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "PopPickerView.h"
-#import "PopDatePickerView.h"
-#import "PopAddressView.h"
+#import "CJTPopNormalPickerView.h"
+#import "CJTPopDatePickerView.h"
+#import "CJTPopAddressView.h"
 
 @interface ViewController ()
 
@@ -28,10 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)PopNormal {
-    PopPickerView   *pop    =   [PopPickerView new];
-    pop.title   =   @"普通Pop";
-    pop.textArr =   @[@"一",@"二",@"三"];
-    [pop loadUI];
+    CJTPopNormalPickerView   *pop    =   [[CJTPopNormalPickerView alloc] initWithTitle:@"普通Pop" textArr:@[@"一",@"二",@"三"]];
     [self.view addSubview:pop];
     
     pop.clickTextBolck  =   ^(NSString *string,NSInteger index) {
@@ -39,23 +36,19 @@
     };
 }
 - (IBAction)PopDate:(id)sender {
-    PopDatePickerView   *pop    =   [PopDatePickerView new];
-    pop.title   =   @"日期Pop";
-    [pop loadUI];
+    CJTPopDatePickerView   *pop    =   [[CJTPopDatePickerView alloc] initWithTitle:@"日期Pop"];
     [self.view addSubview:pop];
     
-    pop.clickDateBolck  =   ^(NSString *string) {
+    pop.clickTextBolck  =   ^(NSString *string,NSInteger index) {
         NSLog(@"%@",string);
     };
 }
 
 - (IBAction)PopAddress {
-    PopAddressView   *pop   =   [PopAddressView new];
-    pop.title   =   @"地址Pop";
-    [pop loadUI];
+    CJTPopAddressView   *pop    =   [[CJTPopAddressView alloc] initWithTitle:@"地址Pop"];
     [self.view addSubview:pop];
     
-    pop.clickAddressBolck   =   ^(NSString *string) {
+    pop.clickTextBolck   =   ^(NSString *string,NSInteger index) {
         NSLog(@"%@",string);
     };
 }

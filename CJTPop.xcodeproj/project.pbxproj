@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1318B6551E66A1880046B860 /* CJTPopPickerTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1318B6541E66A1880046B860 /* CJTPopPickerTopBar.m */; };
+		1318B6581E66ADA00046B860 /* CJTPopPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1318B6571E66ADA00046B860 /* CJTPopPickerView.m */; };
 		131B0F0C1DB48520000B7F99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F0B1DB48520000B7F99 /* main.m */; };
 		131B0F0F1DB48520000B7F99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F0E1DB48520000B7F99 /* AppDelegate.m */; };
 		131B0F121DB48520000B7F99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F111DB48520000B7F99 /* ViewController.m */; };
@@ -16,9 +18,9 @@
 		131B0F251DB48520000B7F99 /* CJTPopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F241DB48520000B7F99 /* CJTPopTests.m */; };
 		131B0F301DB48520000B7F99 /* CJTPopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F2F1DB48520000B7F99 /* CJTPopUITests.m */; };
 		137FFDAE1DB747BC008BE47E /* NSDictionary+ShareCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDA61DB747BC008BE47E /* NSDictionary+ShareCity.m */; };
-		137FFDAF1DB747BC008BE47E /* PopAddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDA91DB747BC008BE47E /* PopAddressView.m */; };
-		137FFDB01DB747BC008BE47E /* PopDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDAB1DB747BC008BE47E /* PopDatePickerView.m */; };
-		137FFDB11DB747BC008BE47E /* PopPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDAD1DB747BC008BE47E /* PopPickerView.m */; };
+		137FFDAF1DB747BC008BE47E /* CJTPopAddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDA91DB747BC008BE47E /* CJTPopAddressView.m */; };
+		137FFDB01DB747BC008BE47E /* CJTPopDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDAB1DB747BC008BE47E /* CJTPopDatePickerView.m */; };
+		137FFDB11DB747BC008BE47E /* CJTPopNormalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDAD1DB747BC008BE47E /* CJTPopNormalPickerView.m */; };
 		137FFDCD1DB749A4008BE47E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 137FFDB31DB749A4008BE47E /* Info.plist */; };
 		137FFDCE1DB749A4008BE47E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDB51DB749A4008BE47E /* MASCompositeConstraint.m */; };
 		137FFDCF1DB749A4008BE47E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDB81DB749A4008BE47E /* MASConstraint.m */; };
@@ -50,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1318B6531E66A1880046B860 /* CJTPopPickerTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTPopPickerTopBar.h; sourceTree = "<group>"; };
+		1318B6541E66A1880046B860 /* CJTPopPickerTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTPopPickerTopBar.m; sourceTree = "<group>"; };
+		1318B6561E66ADA00046B860 /* CJTPopPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTPopPickerView.h; sourceTree = "<group>"; };
+		1318B6571E66ADA00046B860 /* CJTPopPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTPopPickerView.m; sourceTree = "<group>"; };
 		131B0F071DB48520000B7F99 /* CJTPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJTPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		131B0F0B1DB48520000B7F99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		131B0F0D1DB48520000B7F99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,12 +74,12 @@
 		131B0F311DB48520000B7F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		137FFDA51DB747BC008BE47E /* NSDictionary+ShareCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ShareCity.h"; sourceTree = "<group>"; };
 		137FFDA61DB747BC008BE47E /* NSDictionary+ShareCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ShareCity.m"; sourceTree = "<group>"; };
-		137FFDA81DB747BC008BE47E /* PopAddressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAddressView.h; sourceTree = "<group>"; };
-		137FFDA91DB747BC008BE47E /* PopAddressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAddressView.m; sourceTree = "<group>"; };
-		137FFDAA1DB747BC008BE47E /* PopDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopDatePickerView.h; sourceTree = "<group>"; };
-		137FFDAB1DB747BC008BE47E /* PopDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopDatePickerView.m; sourceTree = "<group>"; };
-		137FFDAC1DB747BC008BE47E /* PopPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopPickerView.h; sourceTree = "<group>"; };
-		137FFDAD1DB747BC008BE47E /* PopPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopPickerView.m; sourceTree = "<group>"; };
+		137FFDA81DB747BC008BE47E /* CJTPopAddressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTPopAddressView.h; sourceTree = "<group>"; };
+		137FFDA91DB747BC008BE47E /* CJTPopAddressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTPopAddressView.m; sourceTree = "<group>"; };
+		137FFDAA1DB747BC008BE47E /* CJTPopDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTPopDatePickerView.h; sourceTree = "<group>"; };
+		137FFDAB1DB747BC008BE47E /* CJTPopDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTPopDatePickerView.m; sourceTree = "<group>"; };
+		137FFDAC1DB747BC008BE47E /* CJTPopNormalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTPopNormalPickerView.h; sourceTree = "<group>"; };
+		137FFDAD1DB747BC008BE47E /* CJTPopNormalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTPopNormalPickerView.m; sourceTree = "<group>"; };
 		137FFDB31DB749A4008BE47E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		137FFDB41DB749A4008BE47E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		137FFDB51DB749A4008BE47E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -204,12 +210,16 @@
 		137FFDA71DB747BC008BE47E /* CJTPopView */ = {
 			isa = PBXGroup;
 			children = (
-				137FFDA81DB747BC008BE47E /* PopAddressView.h */,
-				137FFDA91DB747BC008BE47E /* PopAddressView.m */,
-				137FFDAA1DB747BC008BE47E /* PopDatePickerView.h */,
-				137FFDAB1DB747BC008BE47E /* PopDatePickerView.m */,
-				137FFDAC1DB747BC008BE47E /* PopPickerView.h */,
-				137FFDAD1DB747BC008BE47E /* PopPickerView.m */,
+				137FFDA81DB747BC008BE47E /* CJTPopAddressView.h */,
+				137FFDA91DB747BC008BE47E /* CJTPopAddressView.m */,
+				137FFDAA1DB747BC008BE47E /* CJTPopDatePickerView.h */,
+				137FFDAB1DB747BC008BE47E /* CJTPopDatePickerView.m */,
+				137FFDAC1DB747BC008BE47E /* CJTPopNormalPickerView.h */,
+				137FFDAD1DB747BC008BE47E /* CJTPopNormalPickerView.m */,
+				1318B6561E66ADA00046B860 /* CJTPopPickerView.h */,
+				1318B6571E66ADA00046B860 /* CJTPopPickerView.m */,
+				1318B6531E66A1880046B860 /* CJTPopPickerTopBar.h */,
+				1318B6541E66A1880046B860 /* CJTPopPickerTopBar.m */,
 			);
 			path = CJTPopView;
 			sourceTree = "<group>";
@@ -386,19 +396,21 @@
 			files = (
 				137FFDD41DB749A5008BE47E /* NSArray+MASAdditions.m in Sources */,
 				137FFDD31DB749A4008BE47E /* MASViewConstraint.m in Sources */,
-				137FFDB11DB747BC008BE47E /* PopPickerView.m in Sources */,
+				137FFDB11DB747BC008BE47E /* CJTPopNormalPickerView.m in Sources */,
 				137FFDD01DB749A4008BE47E /* MASConstraintMaker.m in Sources */,
 				137FFDD61DB749A5008BE47E /* View+MASAdditions.m in Sources */,
+				1318B6551E66A1880046B860 /* CJTPopPickerTopBar.m in Sources */,
 				137FFDAE1DB747BC008BE47E /* NSDictionary+ShareCity.m in Sources */,
 				137FFDCF1DB749A4008BE47E /* MASConstraint.m in Sources */,
 				131B0F121DB48520000B7F99 /* ViewController.m in Sources */,
 				137FFDD21DB749A4008BE47E /* MASViewAttribute.m in Sources */,
 				137FFDD51DB749A5008BE47E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				137FFDB01DB747BC008BE47E /* PopDatePickerView.m in Sources */,
+				137FFDB01DB747BC008BE47E /* CJTPopDatePickerView.m in Sources */,
 				137FFDCE1DB749A4008BE47E /* MASCompositeConstraint.m in Sources */,
 				137FFDD11DB749A4008BE47E /* MASLayoutConstraint.m in Sources */,
 				131B0F0F1DB48520000B7F99 /* AppDelegate.m in Sources */,
-				137FFDAF1DB747BC008BE47E /* PopAddressView.m in Sources */,
+				1318B6581E66ADA00046B860 /* CJTPopPickerView.m in Sources */,
+				137FFDAF1DB747BC008BE47E /* CJTPopAddressView.m in Sources */,
 				137FFDD71DB749A5008BE47E /* ViewController+MASAdditions.m in Sources */,
 				131B0F0C1DB48520000B7F99 /* main.m in Sources */,
 			);
