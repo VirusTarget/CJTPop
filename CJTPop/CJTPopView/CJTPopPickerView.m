@@ -28,7 +28,8 @@
         self.frame  =   CGRectMake(0, 0,Screen_Width, Screen_Height);
         if ([self.superview isKindOfClass:[UIScrollView class]]) {
             CGPoint offset =   ((UIScrollView *)self.superview).contentOffset;
-            self.frame  =   CGRectMake(0, offset.y,Screen_Width, Screen_Height);
+            //先定位到现在的位置，再创建
+            self.frame  =   CGRectMake(offset.x, offset.y,Screen_Width, Screen_Height);
         }
         self.backgroundColor    =   Color_RGB(0, 0, 0, 0.7);
         [self.superview bringSubviewToFront:self];
@@ -63,6 +64,7 @@
 }
 
 - (void)createAnimation {
+    //先保证布局完成
     [self layoutIfNeeded];
     
     //动画效果
@@ -86,7 +88,7 @@
     UIPanGestureRecognizer  *pan    =   [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(donothing)];
     [self addGestureRecognizer:pan];
     
-    
+    //用来取消掉 removeself 事件
     UITapGestureRecognizer  *cancleTap    =   [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(donothing)];
     [self.picker addGestureRecognizer:cancleTap];
     [self.topTabBar addGestureRecognizer:cancleTap];

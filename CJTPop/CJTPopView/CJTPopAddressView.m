@@ -9,13 +9,12 @@
 #import "CJTPopAddressView.h"
 #import "CJTPopPickerTopBar.h"
 
-#import "NSDictionary+ShareCity.h"
+#import "NSDictionary+CJTShareCity.h"
 
 #define Color_RGB(r,g,b,a)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 @interface CJTPopAddressView ()<UIPickerViewDelegate,UIPickerViewDataSource,UIGestureRecognizerDelegate>
 {
-    int pickerindex;
-    NSString    *proId,*cityId;
+    NSString    *proId,*cityId;//省份id，城市id
 }
 @property (nonatomic, strong)   NSArray *proArr,*cityArr,*areaArr;  //字典数组
 @end

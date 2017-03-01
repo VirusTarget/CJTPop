@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (ShareCity)
+@interface NSDictionary (CJTShareCity)
 
 /**
  获得省份信息

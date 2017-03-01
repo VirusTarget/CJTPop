@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1306BC141E66F4D6002B78EE /* NSDictionary+CJTShareCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1306BC131E66F4D6002B78EE /* NSDictionary+CJTShareCity.m */; };
 		1318B6551E66A1880046B860 /* CJTPopPickerTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1318B6541E66A1880046B860 /* CJTPopPickerTopBar.m */; };
 		1318B6581E66ADA00046B860 /* CJTPopPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1318B6571E66ADA00046B860 /* CJTPopPickerView.m */; };
 		131B0F0C1DB48520000B7F99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F0B1DB48520000B7F99 /* main.m */; };
@@ -17,7 +18,6 @@
 		131B0F1A1DB48520000B7F99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131B0F181DB48520000B7F99 /* LaunchScreen.storyboard */; };
 		131B0F251DB48520000B7F99 /* CJTPopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F241DB48520000B7F99 /* CJTPopTests.m */; };
 		131B0F301DB48520000B7F99 /* CJTPopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 131B0F2F1DB48520000B7F99 /* CJTPopUITests.m */; };
-		137FFDAE1DB747BC008BE47E /* NSDictionary+ShareCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDA61DB747BC008BE47E /* NSDictionary+ShareCity.m */; };
 		137FFDAF1DB747BC008BE47E /* CJTPopAddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDA91DB747BC008BE47E /* CJTPopAddressView.m */; };
 		137FFDB01DB747BC008BE47E /* CJTPopDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDAB1DB747BC008BE47E /* CJTPopDatePickerView.m */; };
 		137FFDB11DB747BC008BE47E /* CJTPopNormalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 137FFDAD1DB747BC008BE47E /* CJTPopNormalPickerView.m */; };
@@ -52,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1306BC121E66F4D6002B78EE /* NSDictionary+CJTShareCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CJTShareCity.h"; sourceTree = "<group>"; };
+		1306BC131E66F4D6002B78EE /* NSDictionary+CJTShareCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CJTShareCity.m"; sourceTree = "<group>"; };
 		1318B6531E66A1880046B860 /* CJTPopPickerTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTPopPickerTopBar.h; sourceTree = "<group>"; };
 		1318B6541E66A1880046B860 /* CJTPopPickerTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTPopPickerTopBar.m; sourceTree = "<group>"; };
 		1318B6561E66ADA00046B860 /* CJTPopPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTPopPickerView.h; sourceTree = "<group>"; };
@@ -72,8 +74,6 @@
 		131B0F2B1DB48520000B7F99 /* CJTPopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJTPopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		131B0F2F1DB48520000B7F99 /* CJTPopUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJTPopUITests.m; sourceTree = "<group>"; };
 		131B0F311DB48520000B7F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		137FFDA51DB747BC008BE47E /* NSDictionary+ShareCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ShareCity.h"; sourceTree = "<group>"; };
-		137FFDA61DB747BC008BE47E /* NSDictionary+ShareCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ShareCity.m"; sourceTree = "<group>"; };
 		137FFDA81DB747BC008BE47E /* CJTPopAddressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTPopAddressView.h; sourceTree = "<group>"; };
 		137FFDA91DB747BC008BE47E /* CJTPopAddressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTPopAddressView.m; sourceTree = "<group>"; };
 		137FFDAA1DB747BC008BE47E /* CJTPopDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTPopDatePickerView.h; sourceTree = "<group>"; };
@@ -162,7 +162,6 @@
 				131B0F111DB48520000B7F99 /* ViewController.m */,
 				131B0F131DB48520000B7F99 /* Main.storyboard */,
 				137FFDB21DB749A4008BE47E /* Masonry */,
-				137FFDA41DB747BC008BE47E /* CityDictionary */,
 				137FFDA71DB747BC008BE47E /* CJTPopView */,
 				131B0F161DB48520000B7F99 /* Assets.xcassets */,
 				131B0F181DB48520000B7F99 /* LaunchScreen.storyboard */,
@@ -198,15 +197,6 @@
 			path = CJTPopUITests;
 			sourceTree = "<group>";
 		};
-		137FFDA41DB747BC008BE47E /* CityDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				137FFDA51DB747BC008BE47E /* NSDictionary+ShareCity.h */,
-				137FFDA61DB747BC008BE47E /* NSDictionary+ShareCity.m */,
-			);
-			path = CityDictionary;
-			sourceTree = "<group>";
-		};
 		137FFDA71DB747BC008BE47E /* CJTPopView */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +210,8 @@
 				1318B6571E66ADA00046B860 /* CJTPopPickerView.m */,
 				1318B6531E66A1880046B860 /* CJTPopPickerTopBar.h */,
 				1318B6541E66A1880046B860 /* CJTPopPickerTopBar.m */,
+				1306BC121E66F4D6002B78EE /* NSDictionary+CJTShareCity.h */,
+				1306BC131E66F4D6002B78EE /* NSDictionary+CJTShareCity.m */,
 			);
 			path = CJTPopView;
 			sourceTree = "<group>";
@@ -400,9 +392,9 @@
 				137FFDD01DB749A4008BE47E /* MASConstraintMaker.m in Sources */,
 				137FFDD61DB749A5008BE47E /* View+MASAdditions.m in Sources */,
 				1318B6551E66A1880046B860 /* CJTPopPickerTopBar.m in Sources */,
-				137FFDAE1DB747BC008BE47E /* NSDictionary+ShareCity.m in Sources */,
 				137FFDCF1DB749A4008BE47E /* MASConstraint.m in Sources */,
 				131B0F121DB48520000B7F99 /* ViewController.m in Sources */,
+				1306BC141E66F4D6002B78EE /* NSDictionary+CJTShareCity.m in Sources */,
 				137FFDD21DB749A4008BE47E /* MASViewAttribute.m in Sources */,
 				137FFDD51DB749A5008BE47E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				137FFDB01DB747BC008BE47E /* CJTPopDatePickerView.m in Sources */,

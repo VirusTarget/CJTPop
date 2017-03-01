@@ -6,9 +6,9 @@
 //  Copyright © 2016年 XWSD. All rights reserved.
 //
 
-#import "NSDictionary+ShareCity.h"
+#import "NSDictionary+CJTShareCity.h"
 
-@implementation NSDictionary (ShareCity)
+@implementation NSDictionary (CJTShareCity)
 
 + (NSArray *)sharePro {
     static NSArray *proarray ;
