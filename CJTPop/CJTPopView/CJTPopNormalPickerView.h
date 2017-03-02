@@ -9,16 +9,14 @@
 #import "CJTPopPickerView.h"
 
 /**
- 弹出框
+ 正常选择器
  */
 @interface CJTPopNormalPickerView: CJTPopPickerView
+#pragma mark- method
 
 /**
- 表格中所要展示的文字数组
+ 通过标题与内容数组进行初始化
  */
-@property   (nonatomic, strong) NSArray     *textArr;
-
-#pragma mark- method
 - (instancetype)initWithTitle:(NSString *)title
                       textArr:(NSArray *)textArr;
 @end

@@ -15,7 +15,9 @@
 @interface CJTPopAddressView ()<UIPickerViewDelegate,UIPickerViewDataSource,UIGestureRecognizerDelegate>
 {
     NSString    *proId,*cityId;//省份id，城市id
+    
 }
+@property (nonatomic) NSInteger   sectionNumber;
 @property (nonatomic, strong)   NSArray *proArr,*cityArr,*areaArr;  //字典数组
 @end
 @implementation CJTPopAddressView
@@ -29,15 +31,32 @@
     }
     return self;
 }
+
 - (instancetype)initWithTitle:(NSString *)title {
     if (self = [self init]) {
         self.topTabBar.title = title;
     }
     return self;
 }
+
+- (instancetype)initWithNumber:(NSInteger)index {
+    if (self = [self init]) {
+        self.sectionNumber = index;
+    }
+    return self;
+}
+
+- (instancetype)initWithTitle:(NSString *)title
+                       number:(NSInteger)index {
+    if (self = [self init]) {
+        self.topTabBar.title = title;
+        self.sectionNumber = index;
+    }
+    return self;
+}
 #pragma mark-   <UIPickerViewDataSource>
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 3;
+    return self.sectionNumber;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
@@ -99,8 +118,8 @@
 #pragma mark- event response
 - (void)event {
     NSString *pro   =   self.proArr.count>0?self.proArr[[self.picker selectedRowInComponent:0]][@"provinceName"]:@"";
-    NSString *city  =   self.cityArr.count>0?self.cityArr[[self.picker selectedRowInComponent:1]][@"name"]:@"";
-    NSString *area  =   self.areaArr.count>0?self.areaArr[[self.picker selectedRowInComponent:2]][@"areaName"]:@"";
+    NSString *city  =   self.cityArr.count>0&&self.sectionNumber>1?self.cityArr[[self.picker selectedRowInComponent:1]][@"name"]:@"";
+    NSString *area  =   self.areaArr.count>0&&self.sectionNumber>2?self.areaArr[[self.picker selectedRowInComponent:2]][@"areaName"]:@"";
     NSString    *adress =   [NSString stringWithFormat:@"%@%@%@",pro,city,area];
     self.clickTextBolck(adress,-1);
     [self removeself];
@@ -115,5 +134,12 @@
         _picker.dataSource = self;
     }
     return _picker;
+}
+
+- (NSInteger)sectionNumber {
+    if (!_sectionNumber || _sectionNumber == 0 || _sectionNumber > 3) {
+        return 3;
+    }
+    return _sectionNumber;
 }
 @end

@@ -11,6 +11,10 @@
 
 #define Color_RGB(r,g,b,a)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 @interface CJTPopNormalPickerView ()<UIPickerViewDelegate,UIPickerViewDataSource>
+/**
+ 表格中所要展示的文字数组
+ */
+@property   (nonatomic, strong) NSArray     *textArr;
 @end
 @implementation CJTPopNormalPickerView
 

@@ -10,15 +10,19 @@
 
 @interface CJTPopPickerTopBar : UIView
 
-@property (nonatomic, strong) NSString *title;
 /**
- 确认按钮
+ 标题内容
  */
-@property (nonatomic, strong) UIButton *ensureButton;
+@property (nonatomic, strong) NSString *title;
 
 /**
- 顶部文字
+ 确认按钮（放外面是为了可以修改）
  */
-@property (nonatomic, strong) UILabel *topTextLabel;
+@property (nonatomic, strong, readonly) UIButton *ensureButton;
+
+/**
+ 顶部文字（放外面是为了可以修改）
+ */
+@property (nonatomic, strong, readonly) UILabel *topTextLabel;
 
 @end

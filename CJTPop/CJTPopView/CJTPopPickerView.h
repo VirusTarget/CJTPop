@@ -9,14 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @class CJTPopPickerTopBar;
+
+/**
+ 选择器基类
+ */
 @interface CJTPopPickerView : UIView
+
 /**
  表格的title
  */
 @property   (nonatomic, strong) NSString    *title;
 
 /**
- 选择器
+ 选择器主题
  */
 @property (nonatomic, strong) UIPickerView *picker;
 
@@ -31,7 +36,14 @@
 @property   (nonatomic, strong) void(^clickTextBolck)(NSString *string,NSInteger index);
 
 #pragma mark- method
+
+/**
+ 通过标题进行初始化
+ */
 - (instancetype)initWithTitle:(NSString *)title;
 
+/**
+ 移除自己
+ */
 - (void)removeself;
 @end

@@ -45,7 +45,8 @@
 }
 
 - (IBAction)PopAddress {
-    CJTPopAddressView   *pop    =   [[CJTPopAddressView alloc] initWithTitle:@"地址Pop"];
+    CJTPopAddressView   *pop    =   [[CJTPopAddressView alloc] initWithTitle:@"地址Pop"
+                                                                      number:2];
     [self.view addSubview:pop];
     
     pop.clickTextBolck   =   ^(NSString *string,NSInteger index) {

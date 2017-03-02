@@ -10,17 +10,30 @@
 #import "Masonry.h"
 
 #define Color_RGB(r,g,b,a)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+@interface CJTPopPickerTopBar()
+
+/**
+ 确认按钮
+ */
+@property (nonatomic, strong, readwrite) UIButton *ensureButton;
+
+/**
+ 顶部文字
+ */
+@property (nonatomic, strong, readwrite) UILabel *topTextLabel;
+@end
+
 @implementation CJTPopPickerTopBar
 
 - (instancetype)init {
     if (self = [super init]) {
         self.backgroundColor =   Color_RGB(238, 242, 243, 1);
-        [self loadUI];
+        [self createUI];
     }
     return self;
 }
 
-- (void)loadUI {
+- (void)createUI {
     [self addSubview:self.topTextLabel];
     [self.topTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self);
