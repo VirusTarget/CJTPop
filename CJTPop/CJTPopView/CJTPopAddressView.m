@@ -121,7 +121,10 @@
     NSString *city  =   self.cityArr.count>0&&self.sectionNumber>1?self.cityArr[[self.picker selectedRowInComponent:1]][@"name"]:@"";
     NSString *area  =   self.areaArr.count>0&&self.sectionNumber>2?self.areaArr[[self.picker selectedRowInComponent:2]][@"areaName"]:@"";
     NSString    *adress =   [NSString stringWithFormat:@"%@%@%@",pro,city,area];
-    self.clickTextBolck(adress,-1);
+    if (self.clickTextBolck)
+        self.clickTextBolck(adress,-1);
+    if (self.clickAddressBolck)
+        self.clickAddressBolck(pro,city,area);
     [self removeself];
 }
 
