@@ -12,6 +12,11 @@
  地址选择器
  */
 @interface CJTPopAddressView : CJTPopPickerView
+ 
+ /**
+ 确认回调
+ */
+@property   (nonatomic, strong) void(^clickAddressBolck)(NSString *proString,NSString *cityString,NSString *zoneString);
 #pragma mark- method
 
 /**
